@@ -1,0 +1,65 @@
+<html>
+
+<head>
+
+<title>Disease Details</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>{{name}}</h1>
+
+<h3>Symptoms</h3>
+
+<ul>
+
+{% for s in info["Symptoms"] %}
+
+<li>{{s}}</li>
+
+{% endfor %}
+
+</ul>
+
+
+<h3>Description</h3>
+
+<p>
+
+{{info["Description"]}}
+
+</p>
+
+
+<h3>Treatment</h3>
+
+<p>
+
+{{info["Treatment"]}}
+
+</p>
+
+
+<br>
+
+<a href="/">
+
+<button>
+
+Back
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

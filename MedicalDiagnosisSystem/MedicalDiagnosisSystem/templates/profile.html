@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+<title>User Profile</title>
+
+</head>
+
+<body>
+
+<h2>User Profile</h2>
+
+<hr>
+
+<h3>Username:</h3>
+{{user}}
+
+<br><br>
+
+<h3>Total Diagnoses:</h3>
+{{total}}
+
+<br><br>
+
+<h3>Recent History</h3>
+
+{% for h in history %}
+
+{{h}} <br>
+
+{% endfor %}
+
+<br><br>
+
+<a href="/home">
+
+<button>
+
+Back to Home
+
+</button>
+
+</a>
+
+</body>
+
+</html>

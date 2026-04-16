@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Semantic Network</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="header">
+<h1>🧠 Semantic Network</h1>
+</div>
+
+<div style="text-align:center; margin-bottom: 20px;">
+    <h2>Knowledge Graph Segments</h2>
+    {% for item in menu %}
+    <a href="/network/{{ item }}" 
+       style="padding: 10px; border: 1px solid blue; text-decoration:none; margin: 5px; border-radius: 5px;">
+       {{ item }}
+    </a>
+    {% endfor %}
+</div>
+
+<div style="background: #f9f9f9; padding: 20px; border-radius: 15px; text-align: center;">
+    <h3>Currently Viewing: {{ current }}</h3>
+    <img src="{{ url_for('static', filename='network_' + current + '.png') }}?t={{ now }}" 
+         style="width: 90%; border-radius: 10px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1);">
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<img src="{{ url_for('static', filename='network.png') }}?t={{ now }}" 
+     alt="Medical Semantic Network" 
+     style="width:100%; height:auto;">
+
+</div>
+
+</div>
+
+</body>
+</html>

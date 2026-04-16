@@ -1,0 +1,57 @@
+<html>
+
+<head>
+
+<title>Admin Panel</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Admin Panel</h1>
+
+<form method="post">
+
+<h3>Disease Name</h3>
+
+<input type="text"
+name="disease"
+required>
+
+<br><br>
+
+<h3>Symptoms (comma separated)</h3>
+
+<input type="text"
+name="symptoms"
+required>
+
+<br><br>
+
+<input type="submit"
+value="Add Disease">
+
+</form>
+
+<br>
+
+<a href="/home">
+
+<button>
+
+Back
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

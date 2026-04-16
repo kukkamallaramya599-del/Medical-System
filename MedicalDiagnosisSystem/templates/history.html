@@ -1,0 +1,70 @@
+<html>
+
+<head>
+
+<title>Diagnosis History</title>
+
+</head>
+
+<body>
+
+<h2>Diagnosis History</h2>
+
+<table border="1">
+
+<tr>
+
+<th>User</th>
+<th>Symptoms</th>
+<th>Result</th>
+<th>Date</th>
+
+</tr>
+
+{% for line in data %}
+
+<tr>
+
+{% set x = line.split("|") %}
+
+<td>{{ x[0] }}</td>
+
+<td>{{ x[1] }}</td>
+
+<td>{{ x[2] }}</td>
+
+<td>{{ x[3] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br><br>
+
+<a href="/delete_history">
+
+<button>
+
+Delete History
+
+</button>
+
+</a>
+
+<br><br>
+
+<a href="/home">
+
+<button>
+
+Back
+
+</button>
+
+</a>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<html>
+
+<head>
+
+<title>Search Disease</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static',
+filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Search Disease</h1>
+
+<form method="post">
+
+<input type="text"
+name="keyword"
+placeholder="Enter Disease Name">
+
+<br><br>
+
+<input type="submit"
+value="Search">
+
+</form>
+
+<br>
+
+{% if result %}
+
+<h2>{{result[0]}}</h2>
+
+<b>Symptoms:</b>
+
+{{result[1]["Symptoms"]}}
+
+<br><br>
+
+<b>Description:</b>
+
+{{result[1]["Description"]}}
+
+<br><br>
+
+<b>Treatment:</b>
+
+{{result[1]["Treatment"]}}
+
+{% endif %}
+
+<br><br>
+
+<a href="/home">
+
+<button>
+
+Back
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

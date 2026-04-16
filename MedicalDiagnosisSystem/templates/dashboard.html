@@ -1,0 +1,68 @@
+<html>
+
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>System Dashboard</h1>
+
+<hr>
+
+<h2>Total Users</h2>
+
+<h3>
+
+{{users}}
+
+</h3>
+
+<hr>
+
+
+<h2>Total Diseases</h2>
+
+<h3>
+
+{{diseases}}
+
+</h3>
+
+<hr>
+
+
+<h2>Total Diagnoses</h2>
+
+<h3>
+
+{{history}}
+
+</h3>
+
+
+<br><br>
+
+<a href="/home">
+
+<button>
+
+Back
+
+</button>
+
+</a>
+
+
+</div>
+
+</body>
+
+</html>

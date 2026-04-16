@@ -1,0 +1,140 @@
+<html>
+
+<head>
+
+<title>Medical Diagnosis</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="header">
+
+<img src="{{ url_for('static', filename='logo.png') }}">
+
+<h1>AI Medical Diagnosis System</h1>
+
+<p>Smart Healthcare Assistant</p>
+
+</div>
+
+
+<div class="navbar">
+
+<a href="/home">Home</a>
+
+<a href="/dashboard">Dashboard</a>
+
+<a href="/history">History</a>
+
+<a href="/profile">Profile</a>
+
+<a href="/search">Search</a>
+
+<a href="/admin">Admin</a>
+
+<a href="/network">Network</a>
+
+<a href="/about">About</a>
+
+<a href="/logout">Logout</a>
+
+</div>
+
+
+
+<div class="container">
+
+
+<div class="welcome">
+
+<h2>Welcome {{session['user']}}</h2>
+
+<p>Select symptoms for Smart Diagnosis</p>
+
+</div>
+
+
+<div class="card">
+
+<form action="/diagnose"
+method="post">
+
+<h2>Select Symptoms</h2>
+
+<input type="checkbox" name="symptom" value="Body Pain"> Body Pain
+<br><br>
+
+<input type="checkbox" name="symptom" value="Sweating"> Sweating
+<br><br>
+
+<input type="checkbox" name="symptom" value="Breathing Issue"> Breathing Issue
+<br><br>
+
+<input type="checkbox" name="symptom" value="Loss of Smell"> Loss of Smell
+<br><br>
+
+<input type="checkbox" name="symptom" value="Weakness"> Weakness
+<br><br>
+
+<input type="checkbox" name="symptom" value="Stomach Pain"> Stomach Pain
+<br><br>
+
+<input type="checkbox" name="symptom" value="Nausea"> Nausea
+<br><br>
+
+<input type="checkbox" name="symptom" value="Weight Loss"> Weight Loss
+<br><br>
+
+<input type="checkbox" name="symptom" value="Fatigue"> Fatigue
+<br><br>
+
+<input type="checkbox" name="symptom" value="Lump"> Lump
+<br><br>
+
+<input type="checkbox" name="symptom" value="Pain"> Pain
+<br><br>
+
+<input type="checkbox" name="symptom" value="Frequent Urination"> Frequent Urination
+<br><br>
+
+<input type="checkbox" name="symptom" value="Increased Thirst"> Increased Thirst
+<br><br>
+
+<input type="checkbox" name="symptom" value="Chest Pain"> Chest Pain
+<br><br>
+
+
+<input type="submit"
+value="Diagnose">
+
+<br><br>
+
+<a href="/network">
+
+<input type="button" value="Show Semantic Network">
+
+</a>
+</form>
+
+</div>
+
+
+</div>
+
+
+</body>
+<div class="footer">
+
+AI Medical Diagnosis System © 2026
+
+<br>
+
+Developed for Academic Project
+
+</div>
+
+</html>

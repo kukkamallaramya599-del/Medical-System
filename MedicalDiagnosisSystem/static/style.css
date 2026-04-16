@@ -1,0 +1,431 @@
+body{
+font-family: Arial;
+margin:0;
+background:#f4f8fb;
+}
+
+
+/* Header */
+
+.header{
+background:#0077b6;
+color:white;
+text-align:center;
+padding:20px;
+}
+/* Logo Style */
+
+.header img {
+
+vertical-align: middle;
+
+margin-right: 10px;
+
+height: 70px;
+
+}
+
+.header h1{
+margin:0;
+}
+
+.header p{
+margin:5px;
+}
+
+
+/* Navbar */
+
+.navbar{
+background:#023e8a;
+padding:12px;
+text-align:center;
+}
+
+.navbar a{
+
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+font-weight:bold;
+}
+
+.navbar a:hover{
+
+color:yellow;
+}
+
+
+/* Container */
+
+.container{
+
+width:80%;
+margin:auto;
+margin-top:20px;
+
+}
+
+
+/* Cards */
+
+.card{
+
+background:white;
+padding:20px;
+margin-top:20px;
+
+border-radius:10px;
+
+box-shadow:0px 0px 10px gray;
+
+}
+
+
+/* Welcome Box */
+
+.welcome{
+
+background:white;
+
+padding:20px;
+
+border-radius:10px;
+
+box-shadow:0px 0px 10px lightgray;
+
+text-align:center;
+
+}
+
+
+/* Buttons */
+
+input[type=submit]{
+
+background:#0096c7;
+
+color:white;
+
+border:none;
+
+padding:10px 20px;
+
+font-size:18px;
+
+border-radius:5px;
+
+cursor:pointer;
+
+}
+
+input[type=submit]:hover{
+
+background:#0077b6;
+
+}
+
+
+/* Table */
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+th{
+
+background:#0077b6;
+
+color:white;
+
+padding:10px;
+
+}
+
+td{
+
+padding:10px;
+
+text-align:center;
+
+border-bottom:1px solid lightgray;
+
+}
+
+
+/* Severity Colors */
+
+.high{
+
+color:red;
+
+font-weight:bold;
+
+}
+
+.medium{
+
+color:orange;
+
+font-weight:bold;
+
+}
+
+.low{
+
+color:green;
+
+font-weight:bold;
+
+}
+
+
+/* AI Box */
+
+.ai-box{
+
+background:#e7f5ff;
+
+padding:15px;
+
+border-radius:10px;
+
+margin-top:20px;
+
+border-left:6px solid #0077b6;
+
+}
+
+
+/* Doctor Box */
+
+.doctor-box{
+
+background:#e6fff2;
+
+padding:15px;
+
+border-radius:10px;
+
+margin-top:20px;
+
+border-left:6px solid green;
+
+}
+
+
+/* Background */
+
+body{
+
+margin:0;
+font-family:Segoe UI;
+
+background:#eef6fb;
+
+}
+
+
+/* Header */
+
+.header{
+
+background:linear-gradient(to right,#2a7fba,#4db6ac);
+
+color:white;
+
+padding:20px;
+
+text-align:center;
+
+box-shadow:0px 3px 10px gray;
+
+}
+
+
+/* Logo */
+
+.header img{
+
+height:60px;
+
+vertical-align:middle;
+
+margin-right:10px;
+
+}
+
+
+/* Navbar */
+
+.navbar{
+
+background:#1e5f8a;
+
+padding:12px;
+
+text-align:center;
+
+}
+
+
+.navbar a{
+
+color:white;
+
+text-decoration:none;
+
+margin:15px;
+
+font-size:18px;
+
+font-weight:bold;
+
+}
+
+
+.navbar a:hover{
+
+color:yellow;
+
+}
+
+
+/* Container */
+
+.container{
+
+width:80%;
+
+margin:auto;
+
+margin-top:20px;
+
+}
+
+
+/* Cards */
+
+.card{
+
+background:white;
+
+padding:20px;
+
+margin-top:20px;
+
+border-radius:10px;
+
+box-shadow:0px 0px 10px lightgray;
+
+}
+
+
+/* Tables */
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:10px;
+
+}
+
+
+th{
+
+background:#2a7fba;
+
+color:white;
+
+padding:10px;
+
+}
+
+
+td{
+
+padding:10px;
+
+text-align:center;
+
+border-bottom:1px solid lightgray;
+
+}
+
+
+/* Buttons */
+
+input[type=submit]{
+
+background:#2a7fba;
+
+color:white;
+
+border:none;
+
+padding:10px 20px;
+
+font-size:16px;
+
+border-radius:5px;
+
+cursor:pointer;
+
+}
+
+
+input[type=submit]:hover{
+
+background:#1e5f8a;
+
+}
+
+
+/* Welcome Box */
+
+.welcome{
+
+background:white;
+
+padding:15px;
+
+border-radius:10px;
+
+box-shadow:0px 0px 10px lightgray;
+
+text-align:center;
+
+}
+
+
+/* Footer */
+
+.footer{
+
+margin-top:40px;
+
+background:#1e5f8a;
+
+color:white;
+
+text-align:center;
+
+padding:15px;
+
+}
+
+.card:hover{
+
+transform:scale(1.02);
+
+transition:0.3s;
+
+}

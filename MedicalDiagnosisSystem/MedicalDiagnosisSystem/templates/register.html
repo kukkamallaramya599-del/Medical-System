@@ -1,0 +1,69 @@
+<html>
+
+<head>
+
+<title>Register</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>User Registration</h1>
+
+<form method="post">
+
+<h3>Username</h3>
+
+<input type="text"
+name="username"
+required>
+
+<br><br>
+
+<h3>Password</h3>
+
+<input type="password"
+name="password"
+required>
+
+<br><br>
+
+<input type="submit"
+value="Register">
+
+</form>
+
+<br>
+
+<a href="/">
+
+<button>
+
+Back to Login
+
+</button>
+
+</a>
+
+<br><br>
+
+{% if msg %}
+
+<p style="color:green">
+
+{{msg}}
+
+</p>
+
+{% endif %}
+
+</div>
+
+</body>
+
+</html>
